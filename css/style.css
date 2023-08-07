@@ -435,12 +435,12 @@ footer img {
 .boton-contacto {
   color: rgb(106, 91, 91);
   font-weight: 600;
-  margin-left: 90%;
-  width: 10%;
+  margin-left: 85%;
+  width: 12%;
   font-family: inherit;
   box-shadow: 0 0 0 1px #ffe3e3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10%;
   background-color: #fff5f5;
 }
 
@@ -465,7 +465,12 @@ footer img {
 
 @media (width < 992px){
   .navbar-nav{
-    background-color: coral;
+    background-color: transparent;
+    align-items: end;
+    padding-right: 10px;
+  }
+  .nav-link{
+    border-radius: 10%;
   }
 }
 
