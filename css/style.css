@@ -11,11 +11,11 @@
 
 body {
   font-size: 62.5%;
-  background: linear-gradient(120deg, rgb(233, 85, 241) 30%, rgb(180, 111, 186) 88%, rgb(176, 113, 176) 40%, rgb(191, 21, 207) 78%);
+  background: linear-gradient(to bottom right, #ff2ab7, #7522a1);
 }
 
 nav {
-  background-color: rgb(131, 53, 131, 0.8);
+  background: linear-gradient(to bottom right, #ff2ab7, #7522a1);
   position: sticky;
   top: 0;
   left: 0;
@@ -66,7 +66,7 @@ nav a:focus {
 }
 
 footer {
-  background-color: rgb(131, 53, 131, 0.8);
+  background: linear-gradient(to bottom right, #ff2ab7, #7522a1);
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -95,7 +95,7 @@ footer img {
 .h1-gral {
   font-size: 4.2em;
   font-weight: 980;
-  color: rgb(58, 56, 53);
+  color: rgb(48, 48, 48);
   margin-bottom: 100px;
   margin-top: 50px;
   text-align: center;
@@ -113,7 +113,7 @@ footer img {
 .parrafo-index-1 {
   width: 70%;
   font-size: 1.8em;
-  color: rgb(65, 65, 66);
+  color: rgb(48, 48, 48);
   line-height: 30px;
   font-weight: 500;
 }
@@ -124,7 +124,7 @@ footer img {
   line-height: 30px;
   font-style: italic;
   font-weight: 600;
-  color: rgb(65, 65, 66);
+  color: rgb(50, 50, 50);
 }
 
 .img-index {
@@ -232,8 +232,8 @@ footer img {
 
 .parrafo-sobremi {
   font-size: 1.4em;
-  font-weight: 500;
-  color: rgb(65, 65, 66);
+  font-weight: 700;
+  color: rgb(50, 50, 50);
   line-height: 30px;
   padding-left: 10px;
   padding-right: 10px;
@@ -273,7 +273,7 @@ footer img {
 .h3-sobremi {
   font-size: 1.6em;
   font-weight: 600;
-  color: rgb(65, 65, 66);
+  color: rgb(40, 40, 40);
   margin-top: 10px;
 }
 
@@ -297,7 +297,7 @@ footer img {
   grid-template-areas: "foto1 foto1" "foto2 foto3" "foto4 foto4" "foto5 foto6";
 }
 
-.template-areas {
+/* .template-areas {
   gap: 5px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -335,7 +335,7 @@ footer img {
 
 .foto6 {
   grid-area: foto6;
-}
+} */
 
 .section-preguntas {
   display: flex;
@@ -391,7 +391,6 @@ footer img {
   flex-direction: column;
   width: 20%;
   font-size: 1.4em;
-  color: rgb(65, 65, 66);
   font-variant: small-caps;
   margin-top: 16px;
 }
@@ -407,7 +406,7 @@ footer img {
 }
 .div-dato-contacto p {
   margin-left: 1.4em;
-  color: rgb(65, 65, 66);
+  color: rgb(235, 235, 242);
   margin-top: 5px;
 }
 
@@ -471,13 +470,6 @@ footer img {
   .nav-link{
     border-radius: 10%;
   }
-}
-
-@media (width < 820px) {
-  .section2-sobremi{
-    display: flex;
-    flex-direction: column;
-  }
 
   .contenedor-contacto{
     display: flex;
@@ -486,19 +478,36 @@ footer img {
   }
 
   .aside-contacto{
+    width: 50%;
+  }
+}
+
+@media (width < 821px) {
+  .section2-sobremi{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aside-contacto{
     width: 60%;
     margin-left: 10%;
   }
 }
 
+@media (width < 601px) {
+  iframe {
+    width: 350px;
+    height: 150px;
+  }
+  footer p {
+    display: none;
+  }
+}
 
 @media (width < 541px) {
   .section-index {
     display: flex;
     flex-direction: column;
-  }
-  footer p {
-    display: none;
   }
   .parrafo-index-1 {
     width: 90%;
@@ -559,9 +568,6 @@ footer img {
     width: 90%;
     margin-top: 50px;
   }
-  .div-iframe-contacto {
-    display: none;
-  }
 }
 @media (width < 321px) {
   .section-servicios {
@@ -592,5 +598,9 @@ footer img {
     width: 90%;
     margin: 0 auto;
     padding: 0 auto;
+  }
+
+  .div-iframe-contacto{
+    display: none;
   }
 }
