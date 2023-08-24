@@ -87,7 +87,7 @@ nav img {
 }
 
 footer {
-  background: #88898c;
+  background: #c56dd6;
   padding: 5px;
   display: flex;
   justify-content: space-between;
@@ -97,7 +97,7 @@ footer {
 footer p {
   font-size: 1.4em;
   font-weight: 700;
-  color: rgb(106, 8, 8);
+  color: rgb(233, 228, 228);
   font-variant: small-caps;
   margin: 0px;
 }
@@ -116,10 +116,10 @@ footer p {
 
 /* for all social containers*/
 .socialContainer {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(104, 96, 96);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,7 +143,7 @@ footer p {
 }
 /* Whatsapp*/
 .containerFour:hover {
-  background-color: #128C7E;
+  background-color: #128c3b;
   transition-duration: .3s;
 }
 
@@ -218,7 +218,7 @@ footer p {
 .section-servicios {
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
+  width: 90%;
   gap: 80px;
   justify-content: center;
   margin: 0 auto;
@@ -609,6 +609,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
   }
 
   .flip-card{
@@ -665,6 +666,7 @@ footer p {
   .section-servicios {
     display: flex;
     flex-direction: column;
+    width: 80%;
   }
   .article-servicios {
     margin: 0 auto;
