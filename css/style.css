@@ -177,6 +177,7 @@ footer p {
 }
 
 .h1-gral {
+  font-family: cursive;
   font-size: 4.2em;
   font-weight: 980;
   color: rgb(73, 73, 74);
@@ -260,10 +261,11 @@ footer p {
   width: 190px;
   height: 254px;
   perspective: 1000px;
-  font-family: sans-serif;
+  font-family: cursive;
 }
 
 .title {
+  font-family: cursive;
   font-size: 1.5em;
   font-weight: 900;
   text-align: center;
