@@ -65,6 +65,16 @@ nav img {
   box-shadow: none;
 }
 
+/* Animación de transición */
+.navbar-toggler-icon {
+  transition: transform 0.2s;
+}
+
+/* Cambiar el ícono a "X" y rotarlo 90 grados al hacer clic */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
+
 .anim {
   background-image: linear-gradient(163deg, #00ff75 0%, #bcb0e8 100%);
   border-radius: 20px;
@@ -128,17 +138,17 @@ footer p {
 }
 /* instagram*/
 .containerOne:hover {
-  background-color: #d62976;
+  background-color: #E1306C;
   transition-duration: .3s;
 }
-/* twitter*/
+/* threads*/
 .containerTwo:hover {
-  background-color: #00acee;
+  background-color: #2b2d2e;
   transition-duration: .3s;
 }
-/* linkdin*/
+/* x-twitter*/
 .containerThree:hover {
-  background-color: #0072b1;
+  background-color: #414446;
   transition-duration: .3s;
 }
 /* Whatsapp*/
